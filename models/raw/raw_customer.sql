@@ -5,4 +5,4 @@
 }}
 
 select *
-from TALAN_ODS.DBT_EJEMLI_RAW_GLOBALMART.CUSTOMER
+from {{ source('globalmart', 'customer') }}
